@@ -72,7 +72,7 @@ nav ul li{
     justify-content: center;
     font-weight: bold;
     font-size: 2rem;
-    line-height: 1.2rem;
+    line-height: 1.9rem;
 }
 /* Main Content Styles */
 .main-content .container {
@@ -168,4 +168,58 @@ footer img{
     .info{
         width: 26%;
     }
+}
+/* Mobile Media Query */
+
+@media only screen and (max-width: 714px)
+{
+    ul.nav{
+        display: none;
+    }
+    ul.mobile-nav{
+        display: initial;
+    }
+    body, html{
+        margin: auto;
+        padding: auto;
+    }
+    .container{
+        margin: auto;
+        margin-right: -100px;
+    }
+    .headline{
+        justify-content: flex-start;
+        width: 100%;
+        margin: 9rem auto 0 auto;
+    }
+    .main-banner{
+        background-position: 20%; 
+        height: 17rem;
+        padding-bottom: 1.5rem;
+    }
+    .logo span{
+        display: none;
+    }
+    .main-content .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .info{
+        width: auto;
+    }
+     .info h3{
+        width: auto;
+        text-align: center;
+
+    }
+    
+    .info.appointments{
+        margin-top: 4rem;
+    }
+    footer .container{
+        width: auto;
+    }
+
 }
